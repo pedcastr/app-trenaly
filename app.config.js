@@ -18,7 +18,22 @@ export default {
       {
         locationAlwaysAndWhenInUsePermission: "Este app precisa da sua localização para encontrar academias e locais próximos para treinar."
       }
-    ]
+    ],
+    [
+      "expo-image-picker",
+      {
+        "photosPermission": "O aplicativo precisa acessar suas fotos para permitir o upload de imagens.",
+        "cameraPermission": "O aplicativo precisa acessar sua câmera para tirar fotos e gravar vídeos."
+      }
+    ],
+    [
+      "expo-splash-screen",
+      {
+        "backgroundColor": "#276999",
+        "imageResizeMode": "contain",
+        "image": "./src/assets/logo-trenaly.png"
+      }
+    ],
   ],
   ios: {
     supportsTablet: true,
@@ -35,6 +50,11 @@ export default {
     },
     package: "com.trenaly.fitness",
     permissions: [
+      "CAMERA",
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE",
+      "INTERNET",
+      "VIBRATE",
       "ACCESS_FINE_LOCATION",
       "ACCESS_COARSE_LOCATION"
     ]
@@ -53,5 +73,8 @@ export default {
     youtubeApiKey: process.env.YOUTUBE_API_KEY,
     googlePlacesApiKey: process.env.GOOGLE_PLACES_API_KEY,
     usdaApiKey: process.env.USDA_API_KEY,
+    eas: {
+      projectId: "c550ec3d-f1ba-43a5-b8f1-76131de341cb"
+    }
   }
 };
