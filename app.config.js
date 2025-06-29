@@ -6,6 +6,12 @@ export default {
   version: "1.0.0",
   scheme: "trenaly",
   orientation: "portrait",
+  updates: {
+    url: "https://u.expo.dev/c550ec3d-f1ba-43a5-b8f1-76131de341cb"
+  },
+  runtimeVersion: {
+    policy: "appVersion"
+  },
   icon: "./assets/icon.png",
   userInterfaceStyle: "light",
   splash: {
@@ -46,7 +52,7 @@ export default {
   },
   android: {
     adaptiveIcon: {
-      foregroundImage: "./assets/adaptive-icon.png",
+      foregroundImage: "./src/assets/logo-trenaly.png",
       backgroundColor: "#276999"
     },
     package: "com.trenaly.fitness",
