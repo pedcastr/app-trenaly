@@ -40,7 +40,8 @@
     "react-native-youtube-iframe": "^2.3.0",
     "styled-components": "^6.1.19",
     "expo-splash-screen": "~0.30.9",
-    "expo-system-ui": "~5.0.9"
+    "expo-system-ui": "~5.0.9",
+    "expo-dev-client": "~5.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

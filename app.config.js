@@ -4,6 +4,7 @@ export default {
   name: "trenaly",
   slug: "trenaly",
   version: "1.0.0",
+  scheme: "trenaly",
   orientation: "portrait",
   icon: "./assets/icon.png",
   userInterfaceStyle: "light",
